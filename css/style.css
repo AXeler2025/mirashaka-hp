@@ -572,6 +572,27 @@ img {
   line-height: 1.8;
 }
 
+/* === Schedule Section === */
+.section-schedule {
+  background: var(--white);
+}
+
+.schedule-calendar {
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-calendar iframe {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .schedule-calendar iframe {
+    height: 500px;
+  }
+}
+
 /* === Event Section === */
 .section-event {
   background: var(--gray-50);
