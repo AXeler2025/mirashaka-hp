@@ -1,41 +1,36 @@
 /* ===================================
    FUTURE SOCIETY DESIGN - Tsukuba University
    Inspired by GYMLABO design
-   Color: Tsukuba Purple (#660099)
+   Color Scheme: Blue & Green
 =================================== */
 
 /* === CSS Variables === */
 :root {
-  /* Tsukuba Purple Color Palette */
-  --purple-primary: #660099;
-  --purple-dark: #4a0070;
-  --purple-light: #8b33b8;
-  --purple-very-light: #f5eaf9;
+  /* Primary: 濃い青 */
+  --primary: #3768b2;
+  --primary-dark: #2a5090;
+  --primary-light: #4a7ec8;
 
-  /* Accent Colors */
-  --green: #2ecc71;
-  --green-dark: #27ae60;
-  --orange: #f39c12;
-  --orange-dark: #e67e22;
-  --pink: #e91e8c;
-  --pink-dark: #c01777;
-  --red: #e74c3c;
-  --red-dark: #c0392b;
-  --yellow: #f1c40f;
-  --blue: #3498db;
+  /* Secondary: 薄い青 */
+  --secondary: #cadff4;
+  --secondary-dark: #a8c8e8;
 
-  /* Neutrals */
+  /* Accent: 濃い緑 */
+  --accent: #0b5040;
+  --accent-dark: #083d30;
+  --accent-light: #0e6b55;
+
+  /* Text: 濃い茶色ベース */
+  --text: #3a302c;
+  --text-light: #5a4d48;
+  --text-muted: #7a6e69;
+
+  /* Neutrals (最小限) */
   --white: #ffffff;
-  --gray-50: #fafafa;
-  --gray-100: #f5f5f5;
-  --gray-200: #eeeeee;
-  --gray-300: #e0e0e0;
-  --gray-400: #bdbdbd;
-  --gray-500: #9e9e9e;
-  --gray-600: #757575;
-  --gray-700: #616161;
-  --gray-800: #424242;
-  --gray-900: #212121;
+  --bg-light: #f5f8fc;
+  --bg-muted: #eaf0f7;
+  --border: #d4dde8;
+  --placeholder: #a0b0c0;
 
   /* Typography */
   --font-jp: 'Noto Sans JP', sans-serif;
@@ -68,7 +63,7 @@ body {
   font-family: var(--font-jp);
   font-size: 16px;
   line-height: 1.8;
-  color: var(--gray-800);
+  color: var(--text);
   background: var(--white);
   overflow-x: hidden;
 }
@@ -135,7 +130,7 @@ img {
 }
 
 .header.scrolled .logo-main {
-  color: var(--purple-primary);
+  color: var(--primary);
 }
 
 .logo-sub {
@@ -146,7 +141,7 @@ img {
 }
 
 .header.scrolled .logo-sub {
-  color: var(--gray-600);
+  color: var(--text-muted);
 }
 
 /* Navigation */
@@ -171,7 +166,7 @@ img {
 }
 
 .header.scrolled .nav-list a {
-  color: var(--gray-800);
+  color: var(--text);
 }
 
 .nav-list a span {
@@ -182,11 +177,11 @@ img {
 }
 
 .header.scrolled .nav-list a span {
-  color: var(--gray-500);
+  color: var(--text-muted);
 }
 
 .nav-list a:hover {
-  color: var(--purple-light);
+  color: var(--primary-light);
 }
 
 /* Header Buttons */
@@ -204,22 +199,22 @@ img {
 }
 
 .btn-sns {
-  background: var(--yellow);
-  color: var(--gray-900);
+  background: var(--secondary);
+  color: var(--text);
 }
 
 .btn-sns:hover {
-  background: #ddb00e;
+  background: var(--secondary-dark);
   transform: translateY(-2px);
 }
 
 .btn-contact {
-  background: var(--purple-primary);
+  background: var(--primary);
   color: var(--white);
 }
 
 .btn-contact:hover {
-  background: var(--purple-dark);
+  background: var(--primary-dark);
   transform: translateY(-2px);
 }
 
@@ -245,7 +240,7 @@ img {
 }
 
 .header.scrolled .menu-toggle span {
-  background: var(--gray-800);
+  background: var(--text);
 }
 
 /* === Hero Section === */
@@ -276,8 +271,8 @@ img {
   width: 100%;
   height: 100%;
   background: linear-gradient(to bottom,
-      rgba(102, 0, 153, 0.3) 0%,
-      rgba(102, 0, 153, 0.5) 100%);
+      rgba(55, 104, 178, 0.3) 0%,
+      rgba(55, 104, 178, 0.5) 100%);
 }
 
 .hero-image img {
@@ -304,21 +299,21 @@ img {
   font-weight: 900;
   color: var(--white);
   text-shadow:
-    3px 3px 0 var(--purple-dark),
-    -1px -1px 0 var(--purple-dark),
-    1px -1px 0 var(--purple-dark),
-    -1px 1px 0 var(--purple-dark);
+    3px 3px 0 var(--primary-dark),
+    -1px -1px 0 var(--primary-dark),
+    1px -1px 0 var(--primary-dark),
+    -1px 1px 0 var(--primary-dark);
   line-height: 1.2;
   letter-spacing: 0.1em;
 }
 
 .hero-title-line:nth-child(2) {
-  color: var(--yellow);
+  color: var(--secondary);
   text-shadow:
-    3px 3px 0 var(--purple-dark),
-    -1px -1px 0 var(--purple-dark),
-    1px -1px 0 var(--purple-dark),
-    -1px 1px 0 var(--purple-dark);
+    3px 3px 0 var(--primary-dark),
+    -1px -1px 0 var(--primary-dark),
+    1px -1px 0 var(--primary-dark),
+    -1px 1px 0 var(--primary-dark);
 }
 
 /* Scroll Indicator */
@@ -370,7 +365,7 @@ img {
   display: block;
   font-size: 3rem;
   font-weight: 900;
-  color: var(--purple-primary);
+  color: var(--primary);
   letter-spacing: 0.15em;
 }
 
@@ -378,13 +373,13 @@ img {
   display: block;
   font-size: 1rem;
   font-weight: 500;
-  color: var(--gray-600);
+  color: var(--text-muted);
   margin-top: 5px;
 }
 
 /* === About Section === */
 .section-about {
-  background: var(--gray-50);
+  background: var(--bg-light);
 }
 
 .about-logo {
@@ -396,7 +391,7 @@ img {
   display: block;
   font-size: 2.5rem;
   font-weight: 900;
-  color: var(--purple-primary);
+  color: var(--primary);
   letter-spacing: 0.1em;
 }
 
@@ -404,7 +399,7 @@ img {
   display: block;
   font-size: 1rem;
   font-weight: 500;
-  color: var(--gray-500);
+  color: var(--text-muted);
   letter-spacing: 0.3em;
   margin-top: 10px;
 }
@@ -413,7 +408,7 @@ img {
   text-align: center;
   font-size: 1.1rem;
   line-height: 2.2;
-  color: var(--gray-700);
+  color: var(--text-light);
 }
 
 /* === Space Section === */
@@ -448,33 +443,25 @@ img {
   margin-bottom: 20px;
 }
 
-.tag-purple {
-  background: var(--purple-primary);
+.tag-primary {
+  background: var(--primary);
 }
 
-.tag-green {
-  background: var(--green);
-}
-
-.tag-orange {
-  background: var(--orange);
-}
-
-.tag-pink {
-  background: var(--pink);
+.tag-accent {
+  background: var(--accent);
 }
 
 .space-name {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--gray-900);
+  color: var(--text);
   margin-bottom: 20px;
 }
 
 .space-desc {
   font-size: 1rem;
   line-height: 2;
-  color: var(--gray-600);
+  color: var(--text-muted);
   margin-bottom: 30px;
 }
 
@@ -495,44 +482,29 @@ img {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.btn-purple {
-  background: var(--purple-primary);
+.btn-primary {
+  background: var(--primary);
 }
 
-.btn-purple:hover {
-  background: var(--purple-dark);
+.btn-primary:hover {
+  background: var(--primary-dark);
 }
 
-.btn-green {
-  background: var(--green);
+.btn-accent {
+  background: var(--accent);
 }
 
-.btn-green:hover {
-  background: var(--green-dark);
+.btn-accent:hover {
+  background: var(--accent-dark);
 }
 
-.btn-orange {
-  background: var(--orange);
+.btn-secondary {
+  background: var(--secondary);
+  color: var(--text);
 }
 
-.btn-orange:hover {
-  background: var(--orange-dark);
-}
-
-.btn-pink {
-  background: var(--pink);
-}
-
-.btn-pink:hover {
-  background: var(--pink-dark);
-}
-
-.btn-red {
-  background: var(--red);
-}
-
-.btn-red:hover {
-  background: var(--red-dark);
+.btn-secondary:hover {
+  background: var(--secondary-dark);
 }
 
 .btn-large {
@@ -547,7 +519,7 @@ img {
 }
 
 .image-placeholder {
-  background: linear-gradient(135deg, var(--purple-very-light), var(--gray-200));
+  background: linear-gradient(135deg, var(--secondary), var(--border));
   padding: 80px 40px;
   display: flex;
   align-items: center;
@@ -559,7 +531,7 @@ img {
 .image-placeholder span {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--gray-400);
+  color: var(--placeholder);
   letter-spacing: 0.1em;
 }
 
@@ -595,7 +567,7 @@ img {
 
 /* === Event Section === */
 .section-event {
-  background: var(--gray-50);
+  background: var(--bg-light);
 }
 
 .event-content {
@@ -608,14 +580,14 @@ img {
 .event-info h3 {
   font-size: 1.8rem;
   font-weight: 700;
-  color: var(--gray-900);
+  color: var(--text);
   margin-bottom: 20px;
 }
 
 .event-info p {
   font-size: 1rem;
   line-height: 2;
-  color: var(--gray-600);
+  color: var(--text-muted);
   margin-bottom: 30px;
 }
 
@@ -635,20 +607,20 @@ img {
 .access-item h4 {
   font-size: 1rem;
   font-weight: 700;
-  color: var(--purple-primary);
+  color: var(--primary);
   margin-bottom: 10px;
   padding-left: 15px;
-  border-left: 4px solid var(--purple-primary);
+  border-left: 4px solid var(--primary);
 }
 
 .access-item p {
   font-size: 0.95rem;
   line-height: 1.8;
-  color: var(--gray-600);
+  color: var(--text-muted);
 }
 
 .map-placeholder {
-  background: var(--gray-200);
+  background: var(--border);
   border-radius: var(--border-radius);
   min-height: 400px;
   display: flex;
@@ -659,14 +631,14 @@ img {
 .map-placeholder span {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--gray-400);
+  color: var(--placeholder);
   text-align: center;
   line-height: 1.8;
 }
 
 /* === Footer === */
 .footer {
-  background: var(--gray-100);
+  background: var(--bg-muted);
 }
 
 .footer-buttons {
@@ -692,15 +664,6 @@ img {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.btn-yellow {
-  background: var(--yellow);
-  color: var(--gray-900);
-}
-
-.btn-blue {
-  background: var(--blue);
-}
-
 .footer-main {
   max-width: var(--container-max);
   margin: 0 auto;
@@ -708,7 +671,7 @@ img {
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 60px;
-  border-top: 1px solid var(--gray-300);
+  border-top: 1px solid var(--border);
 }
 
 .footer-links {
@@ -720,7 +683,7 @@ img {
 .footer-col h5 {
   font-size: 0.9rem;
   font-weight: 700;
-  color: var(--purple-primary);
+  color: var(--primary);
   margin-bottom: 15px;
   letter-spacing: 0.1em;
 }
@@ -731,11 +694,11 @@ img {
 
 .footer-col ul li a {
   font-size: 0.85rem;
-  color: var(--gray-600);
+  color: var(--text-muted);
 }
 
 .footer-col ul li a:hover {
-  color: var(--purple-primary);
+  color: var(--primary);
 }
 
 .footer-contact {
@@ -750,29 +713,29 @@ img {
   display: block;
   font-size: 1.3rem;
   font-weight: 900;
-  color: var(--purple-primary);
+  color: var(--primary);
 }
 
 .footer-logo-sub {
   display: block;
   font-size: 0.75rem;
-  color: var(--gray-500);
+  color: var(--text-muted);
   margin-top: 5px;
 }
 
 .footer-info p {
   font-size: 0.85rem;
   line-height: 1.8;
-  color: var(--gray-600);
+  color: var(--text-muted);
   margin-bottom: 15px;
 }
 
 .footer-info strong {
-  color: var(--gray-800);
+  color: var(--text);
 }
 
 .footer-bottom {
-  background: var(--purple-primary);
+  background: var(--primary);
   padding: 20px;
   text-align: center;
 }
@@ -790,7 +753,7 @@ img {
   right: 30px;
   width: 50px;
   height: 50px;
-  background: var(--purple-primary);
+  background: var(--primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -811,7 +774,7 @@ img {
 }
 
 .back-to-top:hover {
-  background: var(--purple-dark);
+  background: var(--primary-dark);
   transform: translateY(-3px);
 }
 
@@ -860,7 +823,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(102, 0, 153, 0.98);
+    background: rgba(55, 104, 178, 0.98);
     flex-direction: column;
     align-items: center;
     justify-content: center;
