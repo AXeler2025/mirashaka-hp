@@ -199,12 +199,12 @@ img {
 }
 
 .btn-sns {
-  background: var(--secondary);
-  color: var(--text);
+  background: var(--primary);
+  color: var(--white);
 }
 
 .btn-sns:hover {
-  background: var(--secondary-dark);
+  background: var(--primary-dark);
   transform: translateY(-2px);
 }
 
@@ -499,12 +499,12 @@ img {
 }
 
 .btn-secondary {
-  background: var(--secondary);
-  color: var(--text);
+  background: var(--accent);
+  color: var(--white);
 }
 
 .btn-secondary:hover {
-  background: var(--secondary-dark);
+  background: var(--accent-dark);
 }
 
 .btn-large {
