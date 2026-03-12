@@ -53,8 +53,27 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // Floor tab switching
+  const floorTabs = document.querySelectorAll('.floor-tab');
+  const floorContents = document.querySelectorAll('.floor-content');
+
+  floorTabs.forEach(tab => {
+    tab.addEventListener('click', function () {
+      const targetFloor = this.getAttribute('data-floor');
+
+      floorTabs.forEach(t => t.classList.remove('active'));
+      floorContents.forEach(c => c.classList.remove('active'));
+
+      this.classList.add('active');
+      const targetContent = document.getElementById('floor-' + targetFloor);
+      if (targetContent) {
+        targetContent.classList.add('active');
+      }
+    });
+  });
+
   // Fade-in animation on scroll
-  const fadeElements = document.querySelectorAll('.space-item, .event-content, .access-content, .about-logo, .about-text');
+  const fadeElements = document.querySelectorAll('.space-card, .guide-card, .flow-card, .note-card, .event-content, .access-content, .about-logo, .about-text, .about-pillars, .reservation-spaces, .reservation-flow');
 
   const observerOptions = {
     threshold: 0.1,
