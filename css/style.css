@@ -1332,12 +1332,12 @@ img {
 
   .nav-menu.active .nav-list {
     flex-direction: column;
-    gap: 30px;
+    gap: 24px;
     text-align: center;
   }
 
   .nav-menu.active .nav-list a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--white);
   }
 
@@ -1345,12 +1345,35 @@ img {
     color: rgba(255, 255, 255, 0.7);
   }
 
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    margin-bottom: 36px;
+  }
+
   .hero-title-line {
     font-size: clamp(2rem, 12vw, 3.5rem);
   }
 
   .section-title-en {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.1em;
+  }
+
+  .section-title-jp {
+    font-size: 0.85rem;
+  }
+
+  .subsection-title {
+    font-size: 1.15rem;
+  }
+
+  .section-lead {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+    text-align: left;
   }
 
   .about-logo-main {
@@ -1358,38 +1381,146 @@ img {
   }
 
   .about-text {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 2;
+    margin-bottom: 40px;
   }
 
   .about-text br {
     display: none;
   }
 
+  .about-pillars {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .pillar-item {
+    padding: 16px 12px;
+  }
+
+  .pillar-item p {
+    font-size: 0.8rem;
+  }
+
+  .pillar-icon {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.7rem;
+  }
+
+  /* Space cards mobile */
+  .space-card-name {
+    font-size: 1.1rem;
+  }
+
+  .space-card-body {
+    padding: 0 20px 20px;
+  }
+
+  .space-card-header {
+    padding: 20px 20px 12px;
+  }
+
   .space-name {
     font-size: 1.4rem;
   }
 
+  .floor-tab {
+    padding: 12px 32px;
+    font-size: 1rem;
+  }
+
+  /* Reservation table: smaller text on tablet */
+  .reservation-table th,
+  .reservation-table td {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+
+  /* Flow & notes */
+  .flow-card {
+    padding: 24px;
+  }
+
+  .flow-steps li {
+    padding-left: 36px;
+  }
+
+  .note-card {
+    padding: 20px;
+  }
+
+  /* Footer */
   .footer-buttons {
     flex-direction: column;
     align-items: center;
+    padding: 30px 20px;
   }
 
   .footer-btn {
     width: 100%;
     max-width: 300px;
     text-align: center;
+    padding: 14px 30px;
   }
 
   .footer-links {
     grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .footer-main {
+    padding: 40px 20px;
   }
 
   .event-flow {
     grid-template-columns: 1fr 1fr;
   }
 
-  .about-pillars {
-    grid-template-columns: repeat(2, 1fr);
+  .event-info h3 {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  /* Reservation table → card layout on small screens */
+  .reservation-table thead {
+    display: none;
+  }
+
+  .reservation-table,
+  .reservation-table tbody,
+  .reservation-table tr,
+  .reservation-table td {
+    display: block;
+  }
+
+  .reservation-table tr {
+    background: var(--bg-light);
+    border-radius: var(--border-radius-sm);
+    padding: 16px;
+    margin-bottom: 12px;
+  }
+
+  .reservation-table td {
+    padding: 4px 0;
+    border-bottom: none;
+    font-size: 0.9rem;
+  }
+
+  .reservation-table td::before {
+    content: attr(data-label);
+    display: inline-block;
+    font-weight: 700;
+    color: var(--primary);
+    margin-right: 8px;
+    font-size: 0.8rem;
+  }
+
+  .table-wrapper {
+    box-shadow: none;
   }
 }
 
@@ -1400,6 +1531,24 @@ img {
 
   .event-flow {
     grid-template-columns: 1fr;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title-en {
+    font-size: 1.4rem;
+  }
+
+  .guide-card {
+    padding: 24px 20px;
+  }
+
+  .guide-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
   }
 }
 
