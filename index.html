@@ -24,6 +24,8 @@
         <ul class="nav-list">
           <li><a href="#about">ABOUT<span>施設について</span></a></li>
           <li><a href="#space">SPACE<span>スペース</span></a></li>
+          <li><a href="#guide">GUIDE<span>ご利用案内</span></a></li>
+          <li><a href="#reservation">RESERVATION<span>施設予約</span></a></li>
           <li><a href="#schedule">SCHEDULE<span>予定</span></a></li>
           <li><a href="#event">EVENT<span>イベント</span></a></li>
           <li><a href="#access">ACCESS<span>アクセス</span></a></li>
@@ -67,15 +69,43 @@
     <div class="container">
       <div class="about-logo">
         <span class="about-logo-main">未来社会デザイン棟</span>
-        <span class="about-logo-sub">FUTURE SOCIETY DESIGN</span>
+        <span class="about-logo-sub">FUTURE SOCIETY DESIGN COMPLEX</span>
       </div>
       <p class="about-text">
-        「未来社会デザイン棟」は、筑波大学が推進する<br>
-        社会との共創を生み出す新しい交流拠点です。<br><br>
-        学生・研究者・企業・地域社会が集い、<br>
-        未来の社会課題解決に向けた<br>
-        イノベーションを共に創造します。
+        宿舎エリアのシンボルとして2026年3月に誕生。<br>
+        学生・研究者・企業・地域社会が一つ屋根の下に集い、<br>
+        未来の社会課題解決に向けたイノベーションを共に創造します。
       </p>
+      <div class="about-pillars">
+        <div class="pillar-item">
+          <span class="pillar-icon">01</span>
+          <p>多様な価値観の受容と<br>社会性の育成</p>
+        </div>
+        <div class="pillar-item">
+          <span class="pillar-icon">02</span>
+          <p>社会実装を伴う<br>新たな学生文化の発信</p>
+        </div>
+        <div class="pillar-item">
+          <span class="pillar-icon">03</span>
+          <p>学生・地域・社会が交差する<br>コミュニケーションの促進</p>
+        </div>
+        <div class="pillar-item">
+          <span class="pillar-icon">04</span>
+          <p>異分野・異組織融合の推進<br><small>Under One Roof</small></p>
+        </div>
+        <div class="pillar-item">
+          <span class="pillar-icon">05</span>
+          <p>社会課題に挑む<br>マインド（GRIT）の醸成</p>
+        </div>
+        <div class="pillar-item">
+          <span class="pillar-icon">06</span>
+          <p>産業界と接続する<br>先進的人材育成</p>
+        </div>
+        <div class="pillar-item">
+          <span class="pillar-icon">07</span>
+          <p>「開かれた大学」の<br>象徴としての具現化</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -87,78 +117,335 @@
         <span class="section-title-jp">スペース紹介</span>
       </h2>
 
-      <!-- Space 1: Coworking -->
-      <div class="space-item">
-        <div class="space-content">
-          <span class="space-tag tag-primary">Coworking</span>
-          <h3 class="space-name">コワーキングスペース</h3>
-          <p class="space-desc">
-            自由に利用できるオープンスペース。<br>
-            Wi-Fi完備、電源も豊富に用意しています。<br>
-            個人での作業やちょっとした打ち合わせに最適です。
-          </p>
-          <a href="#" class="btn-pill btn-primary">詳しく見る（準備中）</a>
+      <!-- Floor Tabs -->
+      <div class="floor-tabs">
+        <button class="floor-tab active" data-floor="1f">1F</button>
+        <button class="floor-tab" data-floor="2f">2F</button>
+      </div>
+
+      <!-- 1F Spaces -->
+      <div class="floor-content active" id="floor-1f">
+
+        <div class="space-card">
+          <div class="space-card-header">
+            <span class="space-tag tag-primary">Communication</span>
+            <h3 class="space-card-name">コミュニケーションスペース</h3>
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-specs">
+              <div class="spec"><span class="spec-label">面積</span><span class="spec-value">10.8m x 16.3m</span></div>
+              <div class="spec"><span class="spec-label">収容</span><span class="spec-value">約100人</span></div>
+              <div class="spec"><span class="spec-label">設備</span><span class="spec-value">4人掛け席・ソファ席</span></div>
+            </div>
+            <p class="space-card-desc">対話を中心としたオープンスペース。什器を移動して簡易ホールとしても利用可能。交流会やワークショップ、音楽系の公演など多目的に使えます。</p>
+          </div>
         </div>
-        <div class="space-image">
-          <div class="image-placeholder">
-            <span>COMING SOON</span>
+
+        <div class="space-card">
+          <div class="space-card-header">
+            <span class="space-tag tag-accent">Share Office</span>
+            <h3 class="space-card-name">シェアオフィス</h3>
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-specs">
+              <div class="spec"><span class="spec-label">面積</span><span class="spec-value">10.8m x 16.3m</span></div>
+              <div class="spec"><span class="spec-label">設備</span><span class="spec-value">デスク・複合プリンター</span></div>
+              <div class="spec"><span class="spec-label">付帯</span><span class="spec-value">専用会議室 x 4（各10m&sup2;）</span></div>
+            </div>
+            <p class="space-card-desc">契約団体が自由に利用できるオフィススペース。専用の会議室も4室併設しています。</p>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-card-header">
+            <span class="space-tag tag-primary">Creation</span>
+            <h3 class="space-card-name">クリエーションスペース</h3>
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-specs">
+              <div class="spec"><span class="spec-label">面積</span><span class="spec-value">12.6m x 10.9m</span></div>
+              <div class="spec"><span class="spec-label">収容</span><span class="spec-value">約50人</span></div>
+              <div class="spec"><span class="spec-label">設備</span><span class="spec-value">3Dプリンター・大判印刷機</span></div>
+            </div>
+            <p class="space-card-desc">製作機械を使って、自分のデザインを形にできるスペース。個人制作や制作系ワークショップに最適です。</p>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-card-header">
+            <span class="space-tag tag-accent">Grand Staircase</span>
+            <h3 class="space-card-name">大階段</h3>
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-specs">
+              <div class="spec"><span class="spec-label">座席</span><span class="spec-value">約50席</span></div>
+              <div class="spec"><span class="spec-label">設備</span><span class="spec-value">プロジェクター・大型スクリーン・音響設備</span></div>
+            </div>
+            <p class="space-card-desc">階段状の座席から大型スクリーンの映像を観覧可能。セミナーやプレゼンテーション、映画鑑賞会、パブリックビューイングなどに。</p>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-card-header">
+            <span class="space-tag tag-primary">Event Hall</span>
+            <h3 class="space-card-name">イベントホール</h3>
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-specs">
+              <div class="spec"><span class="spec-label">面積</span><span class="spec-value">21.5m x 13.9m</span></div>
+              <div class="spec"><span class="spec-label">収容</span><span class="spec-value">約300人</span></div>
+              <div class="spec"><span class="spec-label">設備</span><span class="spec-value">プロジェクター・大型スクリーン・音響設備・収納型座席</span></div>
+            </div>
+            <p class="space-card-desc">本棟最大のホール。講演会、授業、ダンス・合唱・演奏の発表や練習など幅広い用途に対応。座席の収納も可能です。</p>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-card-header">
+            <span class="space-tag tag-accent">Meeting</span>
+            <h3 class="space-card-name">会議室（1F・3室）</h3>
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-specs">
+              <div class="spec"><span class="spec-label">面積</span><span class="spec-value">30m&sup2; x 1室 / 20m&sup2; x 2室</span></div>
+              <div class="spec"><span class="spec-label">収容</span><span class="spec-value">各8〜10人</span></div>
+              <div class="spec"><span class="spec-label">設備</span><span class="spec-value">長机・椅子</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 2F Spaces -->
+      <div class="floor-content" id="floor-2f">
+
+        <div class="space-card">
+          <div class="space-card-header">
+            <span class="space-tag tag-primary">Communication</span>
+            <h3 class="space-card-name">コミュニケーションスペース</h3>
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-specs">
+              <div class="spec"><span class="spec-label">面積</span><span class="spec-value">16.2m x 9.0m</span></div>
+              <div class="spec"><span class="spec-label">収容</span><span class="spec-value">約20人</span></div>
+              <div class="spec"><span class="spec-label">設備</span><span class="spec-value">小上がり・スツール・掲示板・配架台</span></div>
+            </div>
+            <p class="space-card-desc">2〜4人程度の交流や対話に。掲示板や配架台で企画・団体の情報発信も可能です。</p>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-card-header">
+            <span class="space-tag tag-accent">Group Work</span>
+            <h3 class="space-card-name">グループワークスペース</h3>
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-specs">
+              <div class="spec"><span class="spec-label">面積</span><span class="spec-value">24.3m x 11.7m</span></div>
+              <div class="spec"><span class="spec-label">収容</span><span class="spec-value">約100人</span></div>
+              <div class="spec"><span class="spec-label">設備</span><span class="spec-value">可動式机・椅子・ホワイトボード・電子モニター</span></div>
+            </div>
+            <p class="space-card-desc">什器を自由に組み合わせてワークスペースを構築。グループワーク型授業、ミーティング、ワークショップ、発表会に。</p>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-card-header">
+            <span class="space-tag tag-primary">Presentation</span>
+            <h3 class="space-card-name">プレゼンテーションスペース（4か所）</h3>
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-specs">
+              <div class="spec"><span class="spec-label">面積</span><span class="spec-value">5.4m x 5.4m（2区画）/ 7.2m x 5.4m（2区画）</span></div>
+              <div class="spec"><span class="spec-label">収容</span><span class="spec-value">10〜40人</span></div>
+              <div class="spec"><span class="spec-label">設備</span><span class="spec-value">可動式机・椅子・ホワイトボード・電子モニター</span></div>
+            </div>
+            <p class="space-card-desc">セミナー、ゼミ、発表会、パネルディスカッションなどに。電子モニターに向けた配置で効果的な発表が可能です。</p>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-card-header">
+            <span class="space-tag tag-accent">Solo Work</span>
+            <h3 class="space-card-name">ソロワークスペース</h3>
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-specs">
+              <div class="spec"><span class="spec-label">座席</span><span class="spec-value">約50席</span></div>
+              <div class="spec"><span class="spec-label">設備</span><span class="spec-value">机・椅子・電源・発話ブース</span></div>
+            </div>
+            <p class="space-card-desc">個人作業に集中できるスペース。発話ブースは別途利用予約が必要です。</p>
+          </div>
+        </div>
+
+        <div class="space-card">
+          <div class="space-card-header">
+            <span class="space-tag tag-primary">Meeting</span>
+            <h3 class="space-card-name">会議室（2F・2室）</h3>
+          </div>
+          <div class="space-card-body">
+            <div class="space-card-specs">
+              <div class="spec"><span class="spec-label">面積</span><span class="spec-value">各30m&sup2;</span></div>
+              <div class="spec"><span class="spec-label">収容</span><span class="spec-value">各8〜10人</span></div>
+              <div class="spec"><span class="spec-label">設備</span><span class="spec-value">長机・椅子</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Guide Section -->
+  <section class="section section-guide" id="guide">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-title-en">GUIDE</span>
+        <span class="section-title-jp">ご利用案内</span>
+      </h2>
+
+      <div class="guide-grid">
+        <!-- 開館時間 -->
+        <div class="guide-card">
+          <h3 class="guide-card-title">開館時間</h3>
+          <ul class="guide-list">
+            <li><span class="guide-label">授業開講日</span><span class="guide-value">8:00 - 22:00</span></li>
+            <li><span class="guide-label">土日祝日（休講日）</span><span class="guide-value">10:00 - 22:00</span></li>
+            <li><span class="guide-label">長期休暇中</span><span class="guide-value">10:00 - 19:00</span></li>
+          </ul>
+          <p class="guide-note">※事前申請により変更可能です</p>
+        </div>
+
+        <!-- 利用方法 -->
+        <div class="guide-card">
+          <h3 class="guide-card-title">利用方法</h3>
+          <div class="guide-method">
+            <div class="method-item">
+              <span class="method-badge">自由利用</span>
+              <p>学内外を問わず、自由に入館・利用できます。</p>
+            </div>
+            <div class="method-item">
+              <span class="method-badge method-badge-accent">予約利用</span>
+              <p>施設の貸切や企画実施には、事前の予約申請が必要です。</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 利用者区分 -->
+        <div class="guide-card">
+          <h3 class="guide-card-title">ご利用いただける方</h3>
+          <ul class="guide-list-simple">
+            <li>学内の学生・教職員（正課・正課外）</li>
+            <li>学外の非営利団体・個人</li>
+            <li>学外の営利団体・個人</li>
+            <li>企画運営委員会が認めた団体・個人</li>
+          </ul>
+          <p class="guide-note">※特定の宗教・政治的活動、許可のない営利活動は禁止です</p>
+        </div>
+
+        <!-- 利用ルール -->
+        <div class="guide-card">
+          <h3 class="guide-card-title">利用時のお願い</h3>
+          <ul class="guide-list-simple">
+            <li>貴重品は常に携帯してください</li>
+            <li>敷地内は全面禁煙です</li>
+            <li>フリースペースの占有はご遠慮ください</li>
+            <li>飲食可（匂いの強いものはNG・清掃をお願いします）</li>
+            <li>音出し（音響・楽器・発表等）は企画申請が必要です</li>
+            <li>ゴミはお持ち帰りください</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section class="section section-reservation" id="reservation">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="section-title-en">RESERVATION</span>
+        <span class="section-title-jp">施設予約</span>
+      </h2>
+
+      <p class="section-lead">通常時は自由に利用できるスペースに加え、会議室やイベント用の貸切予約ができます。</p>
+
+      <!-- 予約可能スペース -->
+      <div class="reservation-spaces">
+        <h3 class="subsection-title">予約可能スペース</h3>
+        <div class="table-wrapper">
+          <table class="reservation-table">
+            <thead>
+              <tr>
+                <th>階</th>
+                <th>スペース</th>
+                <th>予約区分</th>
+                <th>Web予約期限</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1F</td><td>大階段</td><td>事前予約</td><td>3日前まで</td></tr>
+              <tr><td>1F</td><td>イベントホール</td><td>事前予約</td><td>3日前まで</td></tr>
+              <tr><td>1F</td><td>コミュニケーションスペース</td><td>貸切予約</td><td>3日前まで</td></tr>
+              <tr><td>1F</td><td>クリエーションスペース</td><td>貸切予約</td><td>3日前まで</td></tr>
+              <tr><td>1F</td><td>会議室</td><td>事前予約</td><td>1日前まで</td></tr>
+              <tr><td>2F</td><td>コミュニケーションスペース</td><td>貸切予約</td><td>3日前まで</td></tr>
+              <tr><td>2F</td><td>グループワークスペース</td><td>貸切予約</td><td>3日前まで</td></tr>
+              <tr><td>2F</td><td>フィットネス</td><td>貸切予約</td><td>3日前まで</td></tr>
+              <tr><td>2F</td><td>プレゼンテーションスペース（4か所）</td><td>事前予約</td><td>1日前まで</td></tr>
+              <tr><td>2F</td><td>個室ブース（2台）</td><td>事前予約</td><td>1日前まで</td></tr>
+              <tr><td>2F</td><td>会議室</td><td>事前予約</td><td>1日前まで</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 予約方法 -->
+      <div class="reservation-flow">
+        <h3 class="subsection-title">予約方法</h3>
+        <div class="flow-grid">
+          <div class="flow-card">
+            <h4 class="flow-card-title">HPからの予約</h4>
+            <ol class="flow-steps">
+              <li>HPで予約状況を確認</li>
+              <li>予約フォームから利用者情報・企画情報を送信</li>
+              <li>予約受理後、確認メールが届く</li>
+              <li>利用時に受付で確認メールを提示・支払い</li>
+            </ol>
+            <a href="https://forms.office.com/pages/responsepage.aspx?id=_V1bnp1m-E6yQEIpy_SoPWp-2IECjddFhAhMD6xlkbtUNjA5V0pPVDdVTzhUNjBTVU1WSjE0REhMRiQlQCN0PWcu&route=shorturl" target="_blank" rel="noopener noreferrer" class="btn-pill btn-primary">学内者の予約はコチラ</a>
+          </div>
+          <div class="flow-card">
+            <h4 class="flow-card-title">受付からの予約</h4>
+            <ol class="flow-steps">
+              <li>受付で予約状況を照会</li>
+              <li>利用申請書を記入して提出</li>
+              <li>企画利用の場合は企画書も提出</li>
+              <li>予約受理後、確認メールが届く</li>
+              <li>利用時に受付で確認メールを提示・支払い</li>
+            </ol>
           </div>
         </div>
       </div>
 
-      <!-- Space 2: Meeting -->
-      <div class="space-item reverse">
-        <div class="space-content">
-          <span class="space-tag tag-accent">Meeting</span>
-          <h3 class="space-name">ミーティングルーム</h3>
-          <p class="space-desc">
-            少人数から中規模のミーティングに対応。<br>
-            プロジェクター・ホワイトボード完備。<br>
-            オンラインミーティングにも対応しています。
-          </p>
-          <a href="#" class="btn-pill btn-accent">詳しく見る（準備中）</a>
-        </div>
-        <div class="space-image">
-          <div class="image-placeholder">
-            <span>COMING SOON</span>
+      <!-- 留意事項 & キャンセルポリシー -->
+      <div class="reservation-notes">
+        <div class="notes-grid">
+          <div class="note-card">
+            <h4 class="note-card-title">留意事項</h4>
+            <ul class="guide-list-simple">
+              <li>予約は受付順です</li>
+              <li>大学の公的行事が優先される場合があります</li>
+              <li>予約は1年以内の日程に限ります</li>
+              <li>同一団体・個人の同時予約は3つまでです</li>
+            </ul>
           </div>
-        </div>
-      </div>
-
-      <!-- Space 3: Event Hall -->
-      <div class="space-item">
-        <div class="space-content">
-          <span class="space-tag tag-primary">Event Hall</span>
-          <h3 class="space-name">イベントホール</h3>
-          <p class="space-desc">
-            セミナーやワークショップ、展示会など<br>
-            多目的に利用可能な大型スペース。<br>
-            最大100名規模のイベントに対応。
-          </p>
-          <a href="#" class="btn-pill btn-primary">詳しく見る（準備中）</a>
-        </div>
-        <div class="space-image">
-          <div class="image-placeholder">
-            <span>COMING SOON</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Space 4: Maker Space -->
-      <div class="space-item reverse">
-        <div class="space-content">
-          <span class="space-tag tag-accent">Maker Space</span>
-          <h3 class="space-name">メイカースペース</h3>
-          <p class="space-desc">
-            3Dプリンターやレーザーカッターなど<br>
-            ものづくりに必要な設備を完備。<br>
-            プロトタイピングや研究開発をサポートします。
-          </p>
-          <a href="#" class="btn-pill btn-accent">詳しく見る（準備中）</a>
-        </div>
-        <div class="space-image">
-          <div class="image-placeholder">
-            <span>COMING SOON</span>
+          <div class="note-card">
+            <h4 class="note-card-title">キャンセルポリシー</h4>
+            <ul class="guide-list">
+              <li><span class="guide-label">前日まで</span><span class="guide-value">無料</span></li>
+              <li><span class="guide-label">予約時間前まで</span><span class="guide-value">10%</span></li>
+              <li><span class="guide-label">予約時間後</span><span class="guide-value">100%</span></li>
+            </ul>
+            <p class="guide-note">※変更・キャンセルはお問い合わせください</p>
           </div>
         </div>
       </div>
@@ -183,17 +470,47 @@
     <div class="container">
       <h2 class="section-title">
         <span class="section-title-en">EVENT</span>
-        <span class="section-title-jp">イベント</span>
+        <span class="section-title-jp">企画・イベント</span>
       </h2>
+
       <div class="event-content">
         <div class="event-info">
-          <h3>イベント開催について</h3>
+          <h3>企画の実施について</h3>
           <p>
-            未来社会デザインでは、セミナー、ワークショップ、<br>
-            展示会など様々なイベントを開催いただけます。<br><br>
-            イベント開催をご希望の方は、<br>
-            下記フォームよりお申し込みください。
+            企画の申請は、施設利用予約とともに行います。<br>
+            企画書を作成し、予約フォームに必要事項を記入して添付してください。
           </p>
+
+          <div class="event-flow">
+            <div class="event-flow-step">
+              <span class="flow-number">1</span>
+              <p>企画書を作成</p>
+            </div>
+            <div class="event-flow-step">
+              <span class="flow-number">2</span>
+              <p>予約フォームで申請</p>
+            </div>
+            <div class="event-flow-step">
+              <span class="flow-number">3</span>
+              <p>受理後、確認メール</p>
+            </div>
+            <div class="event-flow-step">
+              <span class="flow-number">4</span>
+              <p>当日受付で支払い・開始</p>
+            </div>
+          </div>
+
+          <div class="event-notes">
+            <h4>企画時の注意事項</h4>
+            <ul class="guide-list-simple">
+              <li>営利活動を含む企画は事前申告が必要です</li>
+              <li>入場料・参加料の設定が可能です</li>
+              <li>金銭授受は企画団体の責任で管理してください</li>
+              <li>飲食提供は内容により保健所への相談が必要です</li>
+              <li>営利目的の飲食企画は3か月前までにご相談ください</li>
+            </ul>
+          </div>
+
           <a href="https://forms.gle/fqpMtDk1exG9N6ks8" target="_blank" rel="noopener noreferrer" class="btn-pill btn-accent btn-large">イベントの申込はこちら</a>
         </div>
         <div class="event-image">
@@ -216,11 +533,11 @@
         <div class="access-info">
           <div class="access-item">
             <h4>所在地</h4>
-            <p>〒305-8577<br>茨城県つくば市天王台1-1-1<br>筑波大学 ○○棟</p>
+            <p>〒305-8577<br>茨城県つくば市天王台1-1-1<br>筑波大学 未来社会デザイン棟</p>
           </div>
           <div class="access-item">
             <h4>開館時間</h4>
-            <p>平日 9:00〜21:00<br>土曜 10:00〜18:00<br>日祝 休館</p>
+            <p>授業開講日 8:00〜22:00<br>土日祝日 10:00〜22:00<br>長期休暇中 10:00〜19:00</p>
           </div>
           <div class="access-item">
             <h4>アクセス方法</h4>
@@ -240,7 +557,7 @@
   <footer class="footer" id="contact">
     <div class="footer-buttons">
       <a href="https://forms.office.com/pages/responsepage.aspx?id=_V1bnp1m-E6yQEIpy_SoPWp-2IECjddFhAhMD6xlkbtUNjA5V0pPVDdVTzhUNjBTVU1WSjE0REhMRiQlQCN0PWcu&route=shorturl" target="_blank" rel="noopener noreferrer" class="footer-btn btn-secondary">学内者の予約はコチラ</a>
-      <a href="#" class="footer-btn btn-primary">PRICE</a>
+      <a href="#" class="footer-btn btn-primary">PRICE（準備中）</a>
       <a href="#contact" class="footer-btn btn-accent">CONTACT</a>
       <a href="#access" class="footer-btn btn-primary">ACCESS</a>
     </div>
@@ -256,17 +573,22 @@
         <div class="footer-col">
           <h5>SPACE</h5>
           <ul>
-            <li><a href="#space">コワーキング</a></li>
-            <li><a href="#space">ミーティングルーム</a></li>
-            <li><a href="#space">イベントホール</a></li>
-            <li><a href="#space">メイカースペース</a></li>
+            <li><a href="#space">1F スペース</a></li>
+            <li><a href="#space">2F スペース</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>GUIDE</h5>
+          <ul>
+            <li><a href="#guide">ご利用案内</a></li>
+            <li><a href="#reservation">施設予約</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h5>SCHEDULE</h5>
           <ul>
             <li><a href="#schedule">予定カレンダー</a></li>
-            <li><a href="#event">イベント開催</a></li>
+            <li><a href="#event">企画・イベント</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -293,7 +615,7 @@
           </p>
           <p>
             <strong>開館時間</strong><br>
-            平日 9:00〜21:00 / 土曜 10:00〜18:00
+            授業開講日 8:00〜22:00 / 土日祝 10:00〜22:00
           </p>
         </div>
       </div>
