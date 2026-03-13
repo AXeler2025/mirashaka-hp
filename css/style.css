@@ -180,10 +180,6 @@ img {
   color: var(--text-muted);
 }
 
-.nav-list a:hover {
-  color: var(--primary-light);
-}
-
 /* Header Buttons */
 .header-buttons {
   display: flex;
@@ -201,11 +197,6 @@ img {
 .btn-sns {
   background: var(--primary);
   color: var(--white);
-}
-
-.btn-sns:hover {
-  background: var(--primary-dark);
-  transform: translateY(-2px);
 }
 
 .btn-contact {
@@ -447,10 +438,6 @@ img {
   transition: var(--transition);
 }
 
-.pillar-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
 
 .pillar-icon {
   display: inline-block;
@@ -533,10 +520,6 @@ img {
   transition: var(--transition);
 }
 
-.space-card:hover {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-  transform: translateY(-3px);
-}
 
 .space-card-header {
   padding: 24px 28px 16px;
@@ -1391,12 +1374,7 @@ img {
   }
 
   .about-pillars {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
-
-  .pillar-item {
-    padding: 16px 12px;
+    display: none;
   }
 
   .pillar-item p {
